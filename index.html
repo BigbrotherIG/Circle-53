@@ -7,7 +7,9 @@
    
     <title>Phonie</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header class="main-header">
         <h1>Phonie</h1>
@@ -15,7 +17,8 @@
         <nav>
             
             <div class="menulogo">
-                <span>Menu</span>
+                <i class='logomenu bx bx-menu bx-border'></i>            
+                <i class='logoexit bx bx-x bx-border-circle'></i>            
             </div>
             
             <ul class="navlinks">
@@ -41,11 +44,12 @@
                     
                     
                     <div class="success">
-                        <h2>Success!</h2>
+                        <h2 class="msg"></h2>
+                        <h2 class="msgg"></h2>
                         
-                        <form action="">
-                            <input type="text" class="successInput" readonly placeholder="Jane Doe your network provider is MTN">
-                        </form>
+                        <!-- <form action=""> -->
+                            <input type="text" class="successInput" name="para" id="inputField" readonly placeholder="Jane Doe your network provider is MTN">
+                        <!-- </form> -->
                     </div>
 
                 </div>
@@ -55,21 +59,21 @@
             <section>
                 <div class="second-slide">
                     <div class="form-container">
-                        <form action="">
+                        <form action="javascript:void(0)" id="form-id">
                             <p>Enter your Name and Phone number to get your network provider</p>
     
                             <div class="form-input">
                                 <span>Full Name</span>
-                                <input type="text" name="fullname" id="">
+                                <input type="text" name="fullname" id="name-id" >
                             </div>
     
                             <div class="form-input">
                                 <span>Phone Number</span>
-                                <input type="tel" name="telephone" id="">
+                                <input type="tel" name="telephone" id="telephone-id" pattern="[+]{1}[2-4]{3}-[0-9]{3}-[0-9]{4}|[0-9]{4}[0-9]{3}[0-9]{4}">
                             </div>
     
                             <div class="form-input">
-                                <input type="submit" value="Submit">
+                                <input type="submit" value="Submit" id="submit-btn">
                             </div>
                             
                         </form>
