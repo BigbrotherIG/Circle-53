@@ -21,19 +21,26 @@
         navBar.classList.toggle("active")
     }
 
+<<<<<<< HEAD
     function closedMenu() {
         logoMenu.classList.toggle("active")
         logoExit.classList.toggle("active")
         navBar.classList.toggle("active")
     }
 
+=======
+>>>>>>> e2cbcc4ff63d3a7a1225203ee01482a0b23fc006
     // document.querySelectorAll(".links").forEach(n => n.addEventListener("click", () => {
     //     navBar.classList.remove("active")
     //     navLinks.classList.remove("active")
     // }))
     
     document.querySelectorAll(".links").forEach(function closeLinks (e) {
+<<<<<<< HEAD
         e.addEventListener("click", closed)    
+=======
+        e.addEventListener("click", closed)
+>>>>>>> e2cbcc4ff63d3a7a1225203ee01482a0b23fc006
         function closed () {
             console.log("click me")
             openMenu()
@@ -50,6 +57,7 @@
                         
             displayError()                      
         }
+<<<<<<< HEAD
         else {
             
             let para =  document.createElement("input")
@@ -104,3 +112,6 @@
         }
     }
     
+=======
+    })
+>>>>>>> e2cbcc4ff63d3a7a1225203ee01482a0b23fc006
